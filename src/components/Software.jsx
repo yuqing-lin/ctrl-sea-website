@@ -44,7 +44,7 @@ export default function Software() {
             <img
               src={`${BASE}media/diagrams/sw_architecture.png`}
               alt="Software architecture overview"
-              className="diagram-img"
+              className="diagram-img sw-arch-img"
             />
             <figcaption>Software architecture overview</figcaption>
           </figure>

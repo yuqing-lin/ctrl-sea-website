@@ -11,9 +11,9 @@ export default function Media() {
           Videos of the control station, assembly, and in-water testing will appear here as they become available.
         </p>
 
-        <div className="media__grid">
+        <div className="media__list">
           {videos.map(v => (
-            <div key={v.title} className="card media__card">
+            <div key={v.title} className="card media__card media__card--row">
               {v.src ? (
                 <div className="media__embed-wrap">
                   <iframe

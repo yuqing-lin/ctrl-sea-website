@@ -89,7 +89,7 @@ export default function SystemConcept() {
             <img
               src={`${BASE}media/diagrams/simple_use_case_diagram.png`}
               alt="Use-case diagram showing operator and ASV interactions"
-              className="diagram-img"
+              className="diagram-img concept__usecase-img"
             />
             <figcaption>Use-case overview - operator and ASV interactions</figcaption>
           </figure>

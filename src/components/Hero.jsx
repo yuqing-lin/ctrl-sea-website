@@ -20,12 +20,6 @@ export default function Hero() {
 
         <p className="hero__description">{site.description}</p>
 
-        <div className="hero__badges">
-          <span className="badge badge-teal">Autonomous Surface Vehicle</span>
-          <span className="badge badge-teal">ROS 2</span>
-          <span className="badge badge-teal">Water-Quality Sensing</span>
-          <span className="badge badge-teal">Discrete Sampling</span>
-        </div>
 
       </div>
 

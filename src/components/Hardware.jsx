@@ -24,17 +24,14 @@ export default function Hardware() {
             <figcaption>T200 thrusters mounted at the stern</figcaption>
           </figure>
 
-          <div className="hw__photo-fig">
-            <div className="placeholder-box hw__photo-placeholder">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
-                <rect x="3" y="5" width="18" height="14" rx="2" />
-                <circle cx="12" cy="12" r="3.5" />
-                <path d="M3 8h1M20 8h1" />
-              </svg>
-              <span>Top/front view coming soon</span>
-            </div>
-            <figcaption>Hull overview - photo coming soon</figcaption>
-          </div>
+          <figure className="hw__photo-fig">
+            <img
+              src={`${BASE}media/photos/front_side_view.jpeg`}
+              alt="Front and side view of the ASV hull"
+              className="hw__photo"
+            />
+            <figcaption>Front/side view of the hull</figcaption>
+          </figure>
         </div>
 
 

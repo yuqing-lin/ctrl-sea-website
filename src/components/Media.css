@@ -1,8 +1,9 @@
-.media__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.media__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   margin-top: 48px;
+  align-items: center;
 }
 
 .media__card {
@@ -11,6 +12,10 @@
   gap: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.media__card--row {
+  width: 80%;
 }
 
 .media__embed-wrap {
@@ -69,5 +74,5 @@
 }
 
 @media (max-width: 700px) {
-  .media__grid { grid-template-columns: 1fr; }
+  .media__card--row { width: 100%; }
 }

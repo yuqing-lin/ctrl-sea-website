@@ -225,14 +225,8 @@ export const videos = [
   {
     title: 'Control Station Demo',
     caption: 'Shore-side mission planning and telemetry interface, demonstrated with simulated telemetry.',
-    src: 'https://www.youtube.com/embed/DOdCQ5Ef2Ks',
+    src: 'https://www.youtube.com/embed/DOdCQ5Ef2Ks?rel=0&modestbranding=1&autoplay=1&mute=1',
     placeholder: '',
-  },
-  {
-    title: 'Assembly & Build',
-    caption: 'Hardware assembly walkthrough.',
-    src: null,
-    placeholder: 'Assembly video coming soon',
   },
   {
     title: 'Pool / Tank Test',

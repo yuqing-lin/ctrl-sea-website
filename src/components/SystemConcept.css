@@ -64,6 +64,10 @@
   color: var(--text-dim);
   text-align: center;
 }
+.concept__usecase-img {
+  width: 90%;
+  margin: 0 auto;
+}
 
 /* Mission steps */
 .concept__steps-heading {
