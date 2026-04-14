@@ -9,8 +9,7 @@ export default function Hardware() {
         <p className="section-label">Hardware & Build</p>
         <h2 className="section-title">Physical system & components</h2>
         <p className="section-sub">
-          The ASV is built around a monohull with stern-mounted differential-drive thrusters.
-          Full system assembly and testing are currently in progress.
+          Monohull platform with two stern-mounted T200 thrusters, a sealed aft electronics enclosure, a forward sensing and sampling enclosure, and an under-hull sensor cage. Hardware integration is complete; on-water testing is upcoming.
         </p>
 
 

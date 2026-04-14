@@ -8,7 +8,7 @@ export default function Media() {
         <p className="section-label">Media & Videos</p>
         <h2 className="section-title">See it in action</h2>
         <p className="section-sub">
-          Videos of the control station, assembly, and in-water testing will appear here as they become available.
+          Videos of the control station demo and on-water testing will appear here as they become available.
         </p>
 
         <div className="media__list">

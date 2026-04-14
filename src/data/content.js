@@ -17,13 +17,13 @@ export const functionalReqs = [
     id: 'WQ-1',
     title: 'In-Situ Sensing',
     description:
-      'Measure and geo/time-stamp turbidity (0.1-1000 NTU), temperature (0-40 °C), pH (0-14), dissolved oxygen (0-20 mg/L), and conductivity (0-10,000 µS/cm) continuously during survey.',
+      'Measure and geo/time-stamp turbidity (0.1-1000 NTU), temperature (0-40 °C), and pH (0-14) continuously during survey.',
   },
   {
     id: 'SAM-1',
     title: 'Discrete Sampling',
     description:
-      'Collect and label discrete water samples in sealed bottles (≥5 × 250 mL per mission) suitable for post-mission lab analysis of phosphate and nitrate.',
+      'Collect a discrete water sample in a sealed bottle (≥1 × 250 mL per mission) suitable for post-mission lab analysis.',
   },
   {
     id: 'NAV-1',
@@ -66,11 +66,10 @@ export const functionalReqs = [
 export const nonFunctionalReqs = [
   { label: 'Top speed', value: '≥ 3 knots in calm water' },
   { label: 'Survey endurance', value: '≥ 5,000 m² with 20% battery reserve' },
+  { label: 'Estimated runtime', value: '~1.6 hours' },
   { label: 'Max wave height', value: '0.3 m (calm inland water)' },
   { label: 'Max wind speed', value: '10 knots sustained' },
-  { label: 'GPS accuracy', value: '≤ 3 m horizontal (assumed available)' },
-  { label: 'Portability', value: 'Transportable by a team of three' },
-  { label: 'Telemetry rate', value: '1-2 Hz downsampled to shore' },
+  { label: 'GPS accuracy', value: '≤ 3 m horizontal' },
   { label: 'Buoyancy', value: 'Positive buoyancy at all times' },
 ]
 
@@ -88,21 +87,21 @@ export const subsystems = [
     name: 'Water-Quality Sensing',
     icon: '💧',
     description:
-      'Dedicated WQ MCU aggregates turbidity, temperature, pH, dissolved oxygen, and conductivity sensors over I²C. Streams geo-timestamped readings to the main compute.',
+      'Turbidity, temperature, and pH sensors mounted beneath the hull in a protective cage. Electronics in the forward enclosure stream geo-timestamped readings to the main compute.',
   },
   {
     id: 'SAM',
     name: 'Sample Collection',
     icon: '🧪',
     description:
-      'Pump/valve controller handles bottle indexing, fill sequencing, and interlocks. Samples are tagged with GPS position, time, and WQ snapshot at the moment of collection.',
+      'Pump and sample bottle in the forward enclosure. At a designated waypoint the ASV station-keeps, fills the bottle, and tags the sample with GPS position, time, and a WQ snapshot.',
   },
   {
     id: 'PWR',
     name: 'Power',
     icon: '⚡',
     description:
-      '12 V 50 Ah LiFePO4 battery with regulated 12 V and 5 V rails. Master switch, main fuse, branch fusing, and an E-stop that drops propulsion while keeping compute and comms alive.',
+      '12 V 50 Ah LiFePO4 battery with regulated 12 V and 5 V rails. E-stop drops propulsion while keeping compute and comms alive.',
   },
   {
     id: 'COMMS',
@@ -172,7 +171,7 @@ export const sequences = [
     title: 'Pre-Deployment',
     file: 'pre_deployment.png',
     description:
-      'Operator defines the study boundary, the Control Station validates endurance, and uploads the mission plan. ASV completes boot checks and acknowledges readiness.',
+      'Operator defines the study boundary and uploads the mission plan. ASV completes boot checks and acknowledges readiness.',
   },
   {
     title: 'Station-Keep & Discrete Sampling',
@@ -184,13 +183,13 @@ export const sequences = [
     title: 'Boundary Breach Response',
     file: 'boundary_breach.png',
     description:
-      'If the ASV approaches or crosses the operator-defined geofence, the geofence guard interrupts the current mission goal and redirects the vehicle back inside the boundary.',
+      'If the ASV approaches or crosses the geofence, the geofence guard interrupts the current goal and redirects the vehicle back inside the boundary.',
   },
   {
     title: 'Leak Detection → RTH',
     file: 'leak_rth.png',
     description:
-      'A water-ingress event in either enclosure immediately asserts a critical fault, transitions the mission to SAFE/RTH, and notifies the operator with a structured fault event.',
+      'Water ingress in either enclosure immediately asserts a critical fault, transitions to SAFE/RTH, and notifies the operator.',
   },
 ]
 

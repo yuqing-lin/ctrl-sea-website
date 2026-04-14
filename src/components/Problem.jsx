@@ -4,22 +4,22 @@ const points = [
   {
     icon: '🧑‍🔬',
     heading: 'Manual sampling is expensive and sparse',
-    body: 'Traditional water-quality monitoring relies on technicians collecting grab samples by hand. Each sample is a snapshot in time and space - meaning broad spatial coverage requires a large crew and many hours in the field.',
+    body: 'Traditional monitoring relies on hand-collected grab samples - a snapshot in time and space. Broad spatial coverage requires a large crew and many hours in the field.',
   },
   {
     icon: '📍',
     heading: 'Limited spatial resolution',
-    body: 'Water-quality parameters like turbidity, dissolved oxygen, and pH can vary significantly across even a small lake. Manual methods rarely capture enough data points to reveal spatial gradients or localized pollution sources.',
+    body: 'Parameters like turbidity and pH can vary significantly across a small lake. Manual methods rarely capture enough points to reveal spatial gradients or localized pollution sources.',
   },
   {
     icon: '⏱️',
     heading: 'Slow feedback loop',
-    body: 'Lab-analyzed discrete samples can take days to process. Meanwhile, conditions change. Real-time in-situ sensing is needed to support faster environmental decisions and event detection.',
+    body: 'Lab-analyzed samples can take days to process while conditions change. Real-time in-situ sensing enables faster decisions and event detection.',
   },
   {
     icon: '🤖',
     heading: 'Ctrl + Sea fills the gap',
-    body: 'An autonomous surface vehicle can execute a pre-planned coverage survey, stream water-quality metrics continuously, and collect labeled discrete samples for later lab analysis - all without constant operator supervision.',
+    body: 'An ASV can survey a coverage area autonomously, stream water-quality metrics continuously, and collect discrete samples for lab analysis - without constant operator supervision.',
   },
 ]
 

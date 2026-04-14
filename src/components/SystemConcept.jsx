@@ -6,12 +6,12 @@ const missionSteps = [
   {
     step: '01',
     title: 'Plan',
-    body: 'Operator defines the study area on the Control Station map and generates a coverage waypoint plan. The system validates feasibility against battery endurance.',
+    body: 'Operator defines the study area and generates a coverage waypoint plan. The system validates feasibility against battery endurance.',
   },
   {
     step: '02',
     title: 'Deploy',
-    body: 'Mission plan is uploaded to the ASV. The vehicle completes boot checks, calibrations, and sensor validation before acknowledging readiness.',
+    body: 'Mission plan is uploaded to the ASV, which completes boot checks and sensor validation before acknowledging readiness.',
   },
   {
     step: '03',
@@ -26,12 +26,12 @@ const missionSteps = [
   {
     step: '05',
     title: 'Return',
-    body: 'On mission completion, low battery, or operator command, the ASV returns to the recovery point. Operator retrieves the vehicle and sample bottles.',
+    body: 'On mission completion, low battery, or operator command, the ASV returns to the recovery point for retrieval.',
   },
   {
     step: '06',
     title: 'Export',
-    body: 'Control Station exports a CSV of geo-tagged readings and generates spatial heatmaps. Discrete samples are sent to a lab for phosphate and nitrate analysis.',
+    body: 'Control Station exports a CSV of geo-tagged readings and generates spatial heatmaps. Discrete samples go to a lab for analysis.',
   },
 ]
 
@@ -46,25 +46,6 @@ export default function SystemConcept() {
           It executes coverage surveys, measures water quality in situ, and collects discrete samples for lab analysis, all without constant operator control.
         </p>
 
-        {/* Physical layout diagrams */}
-        <div className="concept__diagrams">
-          <figure className="concept__fig">
-            <img
-              src={`${BASE}media/diagrams/wq_asv_side_view_sketch.jpg`}
-              alt="ASV side-view layout sketch showing major component positions"
-              className="diagram-img"
-            />
-            <figcaption>Side view - conceptual component layout</figcaption>
-          </figure>
-          <figure className="concept__fig">
-            <img
-              src={`${BASE}media/diagrams/wq_asv_top_down_view.jpg`}
-              alt="ASV top-down view sketch showing hull, thrusters, and enclosures"
-              className="diagram-img"
-            />
-            <figcaption>Top-down view - hull, propulsion, and enclosure arrangement</figcaption>
-          </figure>
-        </div>
 
         {/* Key specs strip */}
         <div className="concept__specs">
@@ -72,7 +53,7 @@ export default function SystemConcept() {
             { label: 'Propulsion',      value: '2× T200 Thrusters' },
             { label: 'Compute',         value: 'Raspberry Pi 5 + ROS 2' },
             { label: 'Max speed',       value: '≥ 3 knots' },
-            { label: 'Sample capacity', value: '≥ 5 × 250 mL bottles' },
+            { label: 'Sample capacity', value: '1 × 250 mL bottle' },
             { label: 'Battery',         value: '12 V / 50 Ah LiFePO4' },
             { label: 'Operating env',   value: 'Calm inland water' },
           ].map(s => (
