@@ -1,0 +1,112 @@
+.hw__layout-diagrams {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.hw__fig {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hw__fig figcaption {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+.hw__photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.hw__photo-fig {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hw__photo-fig figcaption {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+.hw__photo {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.hw__photo-placeholder {
+  flex: 1;
+  min-height: 220px;
+  margin-top: 0;
+  border-radius: var(--radius-lg);
+}
+
+.hw__sub-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+
+.hw__component-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.hw__component-card {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hw__component-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.hw__component-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+}
+
+.hw__component-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.hw__note {
+  margin-top: 32px;
+  background: var(--surface-2);
+  border-color: var(--accent);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.hw__note strong { color: var(--text); }
+
+@media (max-width: 900px) {
+  .hw__component-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .hw__layout-diagrams { grid-template-columns: 1fr; }
+  .hw__component-grid  { grid-template-columns: 1fr; }
+  .hw__photo-grid      { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,77 @@
+.arch__subsystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.arch__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.arch__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arch__icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.arch__id {
+  font-family: var(--font-mono);
+}
+
+.arch__card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.arch__card-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Diagrams */
+.arch__diagrams {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.arch__fig {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.arch__elec-img {
+  width: 80%;
+  margin: 0 auto;
+}
+.arch__fig figcaption {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+.arch__fig-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .arch__subsystem-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .arch__subsystem-grid { grid-template-columns: 1fr; }
+  .arch__fig-row        { grid-template-columns: 1fr; }
+}

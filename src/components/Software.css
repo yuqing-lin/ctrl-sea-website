@@ -1,0 +1,325 @@
+/* Layer stack */
+.sw-layers {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.sw-layer {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 18px 24px;
+  background: var(--layer-color);
+  border-left: 3px solid rgba(255,255,255,0.15);
+  flex-wrap: wrap;
+}
+
+.sw-layer__left {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 240px;
+  flex: 1;
+}
+
+.sw-layer__num {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+
+.sw-layer__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.sw-layer__desc {
+  font-size: 0.8rem;
+  color: rgba(232,238,244,0.7);
+  line-height: 1.5;
+}
+
+.sw-layer__nodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: flex-start;
+  flex: 2;
+}
+
+.sw-layer__node {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  padding: 4px 10px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 4px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* Diagrams */
+.sw-diagrams {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+}
+.sw-diagrams figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sw-diagrams figcaption {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+/* Sub-headings */
+.sw-sub-heading {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+/* FSM section */
+.sw-fsm-section {
+  margin-top: 56px;
+}
+
+.sw-fsm-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.sw-modes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.sw-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.sw-mode--teal   { border-left: 3px solid var(--accent); }
+.sw-mode--yellow { border-left: 3px solid var(--warning); }
+.sw-mode--red    { border-left: 3px solid var(--danger); }
+.sw-mode--gray   { border-left: 3px solid var(--text-dim); }
+
+.sw-mode__id {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.sw-mode--teal   .sw-mode__id { color: var(--accent-lt); }
+.sw-mode--yellow .sw-mode__id { color: var(--warning); }
+.sw-mode--red    .sw-mode__id { color: var(--danger); }
+
+.sw-mode__desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.sw-fsm-fig {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sw-fsm-fig__img {
+  width: 70%;
+  margin: 0 auto;
+}
+.sw-fsm-fig figcaption {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+/* Demo section */
+.sw-demo-section {
+  margin-top: 56px;
+}
+
+.sw-demo-note {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+  max-width: 660px;
+}
+
+.sw-demo {
+  background: var(--surface-2);
+  padding: 0;
+  overflow: hidden;
+}
+
+.sw-demo__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.sw-demo__title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+.sw-demo__body {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  gap: 0;
+  min-height: 280px;
+}
+
+.sw-demo__status-col {
+  border-right: 1px solid var(--border);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sw-demo__stat-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sw-demo__stat-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.sw-demo__stat-value {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+.sw-demo__stat-value.mono { font-family: var(--font-mono); }
+
+.sw-demo__mode { font-size: 0.8rem; }
+
+.sw-demo__battery-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.sw-demo__battery-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sw-demo__battery-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.sw-demo__wq-col {
+  border-right: 1px solid var(--border);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sw-demo__wq-heading {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+.sw-demo__wq-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.sw-demo__wq-row:last-child { border-bottom: none; }
+
+.sw-demo__wq-metric {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.sw-demo__wq-value {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: var(--text);
+}
+.sw-demo__wq-value.mono { font-family: var(--font-mono); }
+
+.sw-demo__wq-ok {
+  font-size: 0.75rem;
+  width: 16px;
+  text-align: center;
+}
+
+.sw-demo__map {
+  min-height: 200px;
+}
+
+.sw-demo__footer {
+  padding: 10px 20px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.sw-demo__mock-label {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.mono { font-family: var(--font-mono); }
+
+@media (max-width: 900px) {
+  .sw-modes { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .sw-modes { grid-template-columns: 1fr 1fr; }
+  .sw-layer { flex-direction: column; }
+  .sw-fsm-fig__img { width: 100%; }
+}

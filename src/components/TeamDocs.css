@@ -1,0 +1,128 @@
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  padding: 24px 16px;
+}
+
+.team__photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.team__photo-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 2px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+}
+
+.team__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.team__name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.team__role {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Documents */
+.docs__section {
+  margin-top: 56px;
+}
+
+.docs__heading {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+.docs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.docs__card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  text-decoration: none;
+}
+.docs__card:hover { text-decoration: none; }
+
+.docs__card--placeholder {
+  opacity: 0.6;
+  cursor: default;
+}
+.docs__card--placeholder:hover {
+  transform: none;
+  border-color: var(--border);
+}
+
+.docs__icon {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.docs__card-title {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.docs__card-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Context note */
+.team__context {
+  margin-top: 32px;
+  background: var(--surface-2);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.team__context strong { color: var(--text); }
+
+@media (max-width: 900px) {
+  .team__grid  { grid-template-columns: repeat(3, 1fr); }
+  .docs__grid  { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .team__grid  { grid-template-columns: repeat(2, 1fr); }
+  .docs__grid  { grid-template-columns: 1fr; }
+}

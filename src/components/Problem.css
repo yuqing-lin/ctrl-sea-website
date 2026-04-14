@@ -1,0 +1,36 @@
+.problem__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.problem__card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.problem__icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.problem__heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.problem__body {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .problem__grid {
+    grid-template-columns: 1fr;
+  }
+}

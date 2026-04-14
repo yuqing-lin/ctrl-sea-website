@@ -1,0 +1,124 @@
+.concept__diagrams {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.concept__fig {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.concept__fig figcaption {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+/* Specs strip */
+.concept__specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.concept__spec {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 20px;
+  background: var(--surface);
+}
+.concept__spec:nth-child(even) { background: var(--surface-2); }
+
+.concept__spec-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+.concept__spec-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+/* Use-case diagram */
+.concept__usecase {
+  margin-top: 40px;
+}
+.concept__usecase figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.concept__usecase figcaption {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+/* Mission steps */
+.concept__steps-heading {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+
+.concept__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.concept__step {
+  display: flex;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  transition: border-color 0.15s;
+}
+.concept__step:hover { border-color: var(--accent); }
+
+.concept__step-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.concept__step-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.concept__step-body {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .concept__steps { grid-template-columns: repeat(2, 1fr); }
+  .concept__specs  { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .concept__diagrams { grid-template-columns: 1fr; }
+  .concept__steps    { grid-template-columns: 1fr; }
+  .concept__specs    { grid-template-columns: repeat(2, 1fr); }
+}
