@@ -224,11 +224,11 @@ export const videos = [
   {
     title: 'Demo A: Autonomous Survey Mission',
     caption: 'Loads a survey mission, starts autonomous navigation, completes transit and sample waypoints, and returns home.',
-    src: 'https://www.youtube.com/embed/TfmNhivSrmg?rel=0&modestbranding=1&autoplay=1&mute=1&vq=hd1080',
+    src: 'https://www.youtube.com/embed/TfmNhivSrmg?rel=0&modestbranding=1&autoplay=1&mute=1&vq=hd1440',
   },
   {
     title: 'Demo B: Pause/Resume, RTH, and Abort',
     caption: 'Loads a lawnmower survey, demonstrates PAUSE/RESUME mid-mission, RTH (graceful return to home), then restarts a survey with a manual water quality sample trigger, and ABORT (immediate thrust cut, latched SAFE).',
-    src: 'https://www.youtube.com/embed/2kUcKXr2vZA?rel=0&modestbranding=1&autoplay=1&mute=1&vq=hd1080',
+    src: 'https://www.youtube.com/embed/2kUcKXr2vZA?rel=0&modestbranding=1&autoplay=1&mute=1&vq=hd1440',
   },
 ]

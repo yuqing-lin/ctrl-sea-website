@@ -12,12 +12,12 @@ export default function Footer() {
 
         <nav className="footer__nav" aria-label="Footer navigation">
           {[
+            ['Media',        '#media'],
             ['Problem',      '#problem'],
             ['Concept',      '#system-concept'],
             ['Architecture', '#architecture'],
             ['Software',     '#software'],
             ['Hardware',     '#hardware'],
-            ['Media',        '#media'],
           ].map(([label, href]) => (
             <a key={href} href={href} className="footer__link">{label}</a>
           ))}

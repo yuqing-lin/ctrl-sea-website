@@ -16,6 +16,7 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
+        <Media />
         <Problem />
         <Requirements />
         <SystemConcept />
@@ -23,7 +24,6 @@ export default function App() {
         <Software />
         <MissionSequences />
         <Hardware />
-        <Media />
       </main>
       <Footer />
     </>

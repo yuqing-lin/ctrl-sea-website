@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react'
 import './Nav.css'
 
 const links = [
+  { label: 'Media',        href: '#media' },
   { label: 'Problem',      href: '#problem' },
   { label: 'Requirements', href: '#requirements' },
   { label: 'Concept',      href: '#system-concept' },
   { label: 'Architecture', href: '#architecture' },
   { label: 'Software',     href: '#software' },
   { label: 'Hardware',     href: '#hardware' },
-  { label: 'Media',        href: '#media' },
 ]
 
 export default function Nav() {
