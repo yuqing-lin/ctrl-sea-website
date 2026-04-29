@@ -8,7 +8,7 @@ export default function Media() {
         <p className="section-label">Media & Videos</p>
         <h2 className="section-title">See it in action</h2>
         <p className="section-sub">
-          Videos of the control station demo and on-water testing will appear here as they become available.
+          Control station demo and system walkthrough videos.
         </p>
 
         <div className="media__list">
@@ -19,7 +19,7 @@ export default function Media() {
                   <iframe
                     src={v.src}
                     title={v.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                     allowFullScreen
                     className="media__iframe"
                   />

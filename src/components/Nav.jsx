@@ -9,7 +9,6 @@ const links = [
   { label: 'Software',     href: '#software' },
   { label: 'Hardware',     href: '#hardware' },
   { label: 'Media',        href: '#media' },
-  { label: 'Team',         href: '#team' },
 ]
 
 export default function Nav() {

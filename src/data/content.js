@@ -222,21 +222,13 @@ export const team = [
 // src: null → renders placeholder; src: 'https://...' → embeds iframe/video.
 export const videos = [
   {
-    title: 'Control Station Demo',
-    caption: 'Shore-side mission planning and telemetry interface, demonstrated with simulated telemetry.',
-    src: 'https://www.youtube.com/embed/DOdCQ5Ef2Ks?rel=0&modestbranding=1&autoplay=1&mute=1',
-    placeholder: '',
+    title: 'Demo A: Autonomous Survey Mission',
+    caption: 'Loads a survey mission, starts autonomous navigation, completes transit and sample waypoints, and returns home.',
+    src: 'https://www.youtube.com/embed/TfmNhivSrmg?rel=0&modestbranding=1&autoplay=1&mute=1&vq=hd1080',
   },
   {
-    title: 'Pool / Tank Test',
-    caption: 'First in-water thruster and navigation validation.',
-    src: null,
-    placeholder: 'Pool test video coming soon',
-  },
-  {
-    title: 'On-Water Autonomous Mission',
-    caption: 'Full autonomous survey with sensing and sampling.',
-    src: null,
-    placeholder: 'On-water demo coming soon',
+    title: 'Demo B: Pause/Resume, RTH, and Abort',
+    caption: 'Loads a lawnmower survey, demonstrates PAUSE/RESUME mid-mission, RTH (graceful return to home), then restarts a survey with a manual water quality sample trigger, and ABORT (immediate thrust cut, latched SAFE).',
+    src: 'https://www.youtube.com/embed/2kUcKXr2vZA?rel=0&modestbranding=1&autoplay=1&mute=1&vq=hd1080',
   },
 ]

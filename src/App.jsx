@@ -8,7 +8,6 @@ import Software          from './components/Software'
 import MissionSequences  from './components/MissionSequences'
 import Hardware          from './components/Hardware'
 import Media             from './components/Media'
-import TeamDocs          from './components/TeamDocs'
 import Footer            from './components/Footer'
 
 export default function App() {
@@ -25,7 +24,6 @@ export default function App() {
         <MissionSequences />
         <Hardware />
         <Media />
-        <TeamDocs />
       </main>
       <Footer />
     </>

@@ -1,4 +1,4 @@
-import { site } from '../data/content'
+import { site, team } from '../data/content'
 import './Footer.css'
 
 export default function Footer() {
@@ -18,7 +18,6 @@ export default function Footer() {
             ['Software',     '#software'],
             ['Hardware',     '#hardware'],
             ['Media',        '#media'],
-            ['Team',         '#team'],
           ].map(([label, href]) => (
             <a key={href} href={href} className="footer__link">{label}</a>
           ))}
@@ -26,6 +25,9 @@ export default function Footer() {
 
         <p className="footer__copy">
           {site.course} · Carnegie Mellon University
+        </p>
+        <p className="footer__names">
+          {team.map(m => m.name).join(' · ')}
         </p>
       </div>
     </footer>

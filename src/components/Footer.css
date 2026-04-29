@@ -53,3 +53,9 @@
   font-size: 0.78rem;
   color: var(--text-dim);
 }
+
+.footer__names {
+  font-size: 0.7rem;
+  color: var(--border);
+  letter-spacing: 0.02em;
+}

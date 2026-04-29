@@ -37,24 +37,22 @@ export default function SystemArchitecture() {
             <figcaption>Electronics system architecture - subsystem interconnects and interfaces</figcaption>
           </figure>
 
-          <div className="arch__fig-row">
-            <figure className="arch__fig">
-              <img
-                src={`${BASE}media/diagrams/asv_electronics.png`}
-                alt="ASV electronics block diagram"
-                className="diagram-img"
-              />
-              <figcaption>Onboard electronics overview</figcaption>
-            </figure>
-            <figure className="arch__fig">
-              <img
-                src={`${BASE}media/diagrams/asv_power.png`}
-                alt="ASV power architecture diagram"
-                className="diagram-img"
-              />
-              <figcaption>Power distribution architecture</figcaption>
-            </figure>
-          </div>
+          <figure className="arch__fig">
+            <img
+              src={`${BASE}media/diagrams/asv_electronics.png`}
+              alt="ASV electronics block diagram"
+              className="diagram-img arch__elec-img"
+            />
+            <figcaption>Onboard electronics overview</figcaption>
+          </figure>
+          <figure className="arch__fig">
+            <img
+              src={`${BASE}media/diagrams/asv_power.png`}
+              alt="ASV power architecture diagram"
+              className="diagram-img arch__elec-img"
+            />
+            <figcaption>Power distribution architecture</figcaption>
+          </figure>
         </div>
       </div>
     </section>
